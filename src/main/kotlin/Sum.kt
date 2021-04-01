@@ -3,8 +3,8 @@ class Sum {
         return if (input.isEmpty()) {
             acc
         } else {
-            val newAcc = acc + input.last()
-            sum(input.dropLast(1), newAcc)
+            val newAcc = acc + input.first()
+            sum(input.drop(1), newAcc)
         }
     }
 }
