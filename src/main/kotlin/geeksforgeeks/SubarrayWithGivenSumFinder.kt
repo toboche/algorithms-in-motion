@@ -6,6 +6,12 @@ class SubarrayWithGivenSumFinder {
             return null
         }
 
+        if (array.size == 1) {
+            if (array[0] == expectedSum) {
+                return 0 to 0;
+            }
+        }
+
         var start = 0
         var end = 1
         var currentSum = array[0] + array[1]

@@ -21,4 +21,10 @@ class SubarrayWithGivenSumFinderTest {
         val input = listOf(1, 2, 3, 17, 5)
         assertEquals(3 to 3, SubarrayWithGivenSumFinder().findSubarrayWithGivenSum(input, 17))
     }
+
+    @Test
+    fun testSample1item() {
+        val input = listOf(42)
+        assertEquals(0 to 0, SubarrayWithGivenSumFinder().findSubarrayWithGivenSum(input, 42))
+    }
 }
